@@ -27,5 +27,5 @@ Based on an early release of [John Tromp's Equihash solvers](https://github.com/
 Thanks to ocminer from suprnova and feeleep from coinmine.pl for debugging assistance!
 
 Tips & donations are very much appreciated on:
-BTC: 1Nu2fMCEBjmnLzqb8qUJpKgq5RoEWFhNcW
+BTC: 1Nu2fMCEBjmnLzqb8qUJpKgq5RoEWFhNcW  
 ETH: 0xeb9310b185455f863f526dab3d245809f6854b4d
