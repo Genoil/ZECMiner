@@ -7,13 +7,13 @@ for the Windows crowd out there that want to mine on ZEC stratum pools from day 
 # Options
 command line options are very limited:
 
-help,h: show this help message
-conn,c: set host
-user,u: set user
-pass,p: set password
-gpus,g: set gpu(s)
-ints,i: set intensity (defaults to 13)
-plat,P: set OpenCL platform id
+- help, h: show this help message
+- conn, c: set host
+- user, u: set user
+- pass, p: set password
+- gpus, g: set gpu(s)
+- ints, i: set intensity (defaults to 13)
+- plat, P: set OpenCL platform id
 
 example:
 
