@@ -19,10 +19,12 @@ Command line param        Description              Example
 --conn,-c hostname:port   set host                 -c zec.suprnova.cc:2142
 --user,-u username.worker set user                 -u Genoil.SilentArmy
 --pass,-p workerpass      set password             -p z
---gpus,-g <x y z ...>	  set gpu(s)               -g 0 1 2 3 ...
---work,-w <n> 			  set work size(s)         -w 64
---ints,-i <n> 			  set intensity(ies)       -i 20
---plat,-P <n> 			  set OpenCL platform id   -P 0
+--gpus,-g <x y z ...>	    set gpu(s)               -g 0 1 2 3 ...
+--work,-w <n> 			      set work size(s)         -w 64
+--ints,-i <n> 			      set intensity(ies)       -i 20
+--plat,-P <n> 			      set OpenCL platform id   -P 0
+--fail,f <n>              set gpu fail mode        -f 0
+--zero,z <n>              set zero sols watch      -z 1
 ```
 
 Notes:
@@ -30,7 +32,8 @@ Notes:
 - --ints/-i parameter sets 2-log of equihash bucket size & OpenCL global work size. Only the following values are supported: 20, 19, 18, 16. Lower values will usually lower performance, but free up GPU resources for desktop work or dual mining.
 - --work/-w parameter prefers powers of to between 64 and 256. You may experiment with other values.
 - --plat--P paramter is useful for systems with iGPU enabled or mixed AMD/Nvidia GPUs.
-
+- --fail/-f 0: attempt gpu restart 1: exit gpu thread 2: exit application (default: 0)
+- --zero/-z 0: disable 0 sol/s watchdog 1: enable 0 sols/s watcdog (default: 1)
 
 Example:
 ```
